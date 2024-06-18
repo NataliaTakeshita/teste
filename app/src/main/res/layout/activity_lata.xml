@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lata">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="413dp"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo"
+            android:background="#FFC07E"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="152dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9"
+        app:srcCompat="@drawable/lata" />
+
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="351dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/michroma"
+        android:text="Essas são as latas de 300ml        R$6.00"
+        android:textColor="#6C6B6B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout15"
+        android:layout_width="299dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/radioButton9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/michroma"
+                android:text="Coca cola"
+                tools:layout_editor_absoluteX="-104dp"
+                tools:layout_editor_absoluteY="495dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/michroma"
+                android:text="Guarana Antartica"
+                tools:layout_editor_absoluteX="-146dp"
+                tools:layout_editor_absoluteY="609dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/michroma"
+                android:text="Pepsi"
+                tools:layout_editor_absoluteX="-146dp"
+                tools:layout_editor_absoluteY="609dp" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="301dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout15">
+
+
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/michroma"
+            android:text="Qual tipo?" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/michroma"
+            android:text="Normal"
+            android:textSize="12sp" />
+
+
+
+
+        <RadioButton
+            android:id="@+id/radioButton14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/michroma"
+            android:text="Zero"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+
+
+
+    <LinearLayout
+        android:layout_width="239dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2">
+
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Quantas unidades?"
+            android:inputType="number" />
+
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:backgroundTint="#403128"
+            android:text="Comprar" />
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
